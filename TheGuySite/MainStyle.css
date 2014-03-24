@@ -1,0 +1,135 @@
+/* 
+    Document   : MainStyle
+    Created on : Dec 31, 2013, 7:14:36 PM
+    Author     : Yiwen Dong
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#navbar{
+        margin: 0px 20%;
+        border: 1px;
+        border-color: black;
+        padding: 5px 20px;
+        background-color: #FFFF00;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px #888888;
+}
+
+ #navbar .menuul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center;  
+	} 
+ 
+#navbar .menuul .menuli {  
+	display: inline; 
+	} 
+ 
+#navbar .menuul .menuli .menua { 
+	text-decoration: none; 
+	padding: .2em 5%; 
+	color: black; 
+        font-size: 24px;
+	} 
+ 
+#navbar .menuul .menuli .menua:hover { 
+	color: #000; 
+	background-color: #fff; 
+	} 
+
+body {
+        background-color: #D8D8D8;
+        }
+
+#body {
+        margin: 0px 20%;
+        border: 1px;
+        border-color: black;
+        padding: 5px 20px;
+        background-color: #FA5858;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px #888888;
+}
+
+.rightbar{
+        float: right;
+        width: 150px;
+        background-color: #A9A9F5;
+        border-radius: 10px;
+        padding: 20px 0px;
+        margin: 25px 20px;
+}
+
+.rightbartitle{
+        margin: 0px 10px 10px 10px;
+        font-size: 16px;
+        font-weight: bold;
+}
+
+.rightbarlinks{
+        color: black;
+        margin: auto 10px;
+}
+
+.rightbarlinks:visited{
+        color: black;
+}
+
+#pagetitle{
+        font-size: 45px;
+        font-family: Verdana, sans-serif;
+}
+
+#footer{
+        margin: 0px 20%;
+        border: 1px;
+        border-color: black;
+        padding: 5px 20px;
+        background-color: #FFFF00;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px #888888;
+        text-align: center;
+}
+
+.subsection{
+        margin-left: 30px;
+        font-size: 35px;
+        font-family: Verdana, sans-serif;
+}
+
+.subsectionwords{
+        margin-left: 80px;
+}
+
+#image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+#image:hover{
+        width: 100%;
+        height: 100%;
+}
+
+.subsectionsubtitle{
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 70px;
+        margin-bottom: 5px;
+}
+
+.subsectiondate{
+        font-weight: lighter;
+        font-size: 7px;
+        color: lightpink;
+        margin: 0px 70px;
+}
+
+.linksnostyle {
+        color: black;
+        font-size: inherit;
+        text-decoration: none;
+}
