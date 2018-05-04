@@ -1,9 +1,9 @@
 {
   "Home": "./",
+  "QEMU Addition": "./qemuimp.html",
+  "Recumbent Bike": "./recbike.html",
   "CustomDoc": "./customdoc.html",
-  "Alarm Clock": "./alarmclock.html",
   "Traffic Visual": "./trafficvisual.html",
-  "Uh huh": "./uhhuh.html",
   "Flappy Byrd": "./flappybyrd.html",
-  "WGPA Calc": "./wgpacalc.html"
+  "More Projects": "./projects.html"
 }

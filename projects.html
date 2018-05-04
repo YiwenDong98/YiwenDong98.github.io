@@ -15,6 +15,7 @@
 <link href="assets/css/style-alt.css" rel="stylesheet">
 <link href="assets/css/animate.css" rel="stylesheet">
 <link href="assets/css/skin-blue.css" rel="stylesheet">
+
 <!-- Le fav -->
 <link rel="shortcut icon" href="assets/ico/favicon.png">
 <!--[if lt IE 9]>
@@ -54,13 +55,6 @@ experience.
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul id="navbarlist" class="nav navbar-nav navbar-right">
-			<!--<li><a href="./">Home</a></li>
-			<li class="active"><a href="./customdoc.html">CustomDoc</a></li>
-			<li><a href="./alarmclock.html">Alarm Clock</a></li>
-			<li><a href="./trafficvisual.html">Traffic Visual</a></li>
-			<li><a href="./uhhuh.html">Uh huh</a></li>
-			<li><a href="./flappybyrd.html">Flappy Byrd</a></li>
-			<li><a href="./wgpacalc.html">WGPA Calc</a></li>-->
 		</ul>
 	</div>
 	<!-- /.navbar-collapse -->
@@ -73,6 +67,7 @@ $.get("./data/navbar.json", function(data){
   var path = url.pathname;
   for (var key in data) {
     if (data.hasOwnProperty(key)) {
+      console.log("APPENDING");
       if (data[key] == "." + path) {
         $("#navbarlist").append('<li class="active"><a href="' + data[key] + '">' + key + '</a></li>');        
       } else {
@@ -84,6 +79,8 @@ $.get("./data/navbar.json", function(data){
 });
 </script>
 <!-- HOMEPAGE -->
+
+<!--
 <header id="top-section-c" class="fullbg">
 <div class="jumbotron carousel">
 <div id="carousel_intro" >
@@ -126,68 +123,154 @@ function showDivs(n) {
 </script>
 <div class="inner-top-bg">
 </div>
+-->
 </header>
-<!-- / HOMEPAGE -->
-<!--  SECTION-1 -->
-<section id="Section-c" class="fullbg">
+<!-- SECTION-2(gallery) -->
+<section id="Section-2" class="fullbg color-white">
 <div class="section-divider">
 </div>
-<div class="container">
+<div class="container demo-3">
 <div class="row">
-	<div class="page-header text-center col-sm-12 col-lg-12 color-white animated fade">
-		<h1>CustomDoc</h1>
+	<div class="page-header text-center col-sm-12 col-lg-12">
+		<h1>Projects</h1>
 		<p class="lead">
-			 Eclipse plugin that generates template documents from java source.
+			 List of projects I bothered to make a page for.
 		</p>
 	</div>
 </div>
-<div class="row">
-<div class="col-md-7 col-md-offset-3 animated fade" style="color:#c0c0c0; font-size:20px;">
-<ul>
-<li>
-  <p>Generate sources as required by CS 2510 at NEU. </p>
-</li>
-<li>
-  <p>Built in to eclipse for easy generation and accurate java parsing.</p>
-</li>
-<li>
-  <p>Saves time from having to manually type out the template.</p>
-</li>
-</ul>
-</div>
-</div>
-<br />
 <div>
-<div class="animated fade" style="margin:auto; width:400px">
-<a href="https://github.com/TheGuy191919/CustomDoc" class="buttoncolor animated fadeInUpBig" style="margin: auto;"><i class="fa fa-link"></i>&nbsp; Github</a>
-<a href="https://github.com/TheGuy191919/CustomDoc/raw/master/CustomDoc.zip" class="buttoncolor animated fadeInUpBig" style="margin: auto;"><i class="fa fa-download"></i>&nbsp; Download</a>
-</div>
+	<div class="col-sm-12 col-lg-12">
+		<ul class="grid cs-style-4">
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/qemuimp.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Improve QEMU</h3>
+			<p style="font-size: 13px;" >Live migration speed up (2018)</p>
+			<a href="./qemuimp.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/recbike.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Recumbent Bike</h3>
+			<p style="font-size: 13px;" >Design and built trike (2017-2018)</p>
+			<a href="./recbike.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/pollster.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Pollster</h3>
+			<p style="font-size: 13px;" >Snapchat polling site (2018)</p>
+			<a href="./pollster.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/customdoc.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Custom Doc</h3>
+			<p style="font-size: 13px;" >Eclipse doc plugin (2017)</p>
+			<a href="./customdoc.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/alarmclock.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Alarm Clock</h3>
+			<p style="font-size: 13px;" >Raspberry pi clock (2017)</p>
+			<a href="./alarmclock.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/trafficvisual.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Traffic Visual</h3>
+			<p style="font-size: 13px;" >Boston Traffic visual (2016)</p>
+			<a href="./trafficvisual.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/uhhuh.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Uhhuh</h3>
+			<p style="font-size: 13px;" >UDP Chat Client (2014-2016)</p>
+			<a href="./uhhuh.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/flappybyrd.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>Flappy Byrd</h3>
+			<p style="font-size: 13px;" >Flappy Bird Clone (2016)</p>
+			<a href="./flappybyrd.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="./assets/img/project.html/wgpacalc.html.png" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>WGPA Calc</h3>
+			<p style="font-size: 13px;" >WGPA Calculator (2014)</p>
+			<a href="./wgpacalc.html">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<!--
+			<li>
+			<figure>
+			<div>
+				<img src="http://unsplash.it/400/266?random=16" alt="premium-themes-templates">
+			</div>
+			<figcaption>
+			<h3>AAAAAAAA</h3>
+			<p>MORE AAAAA</p>
+			<a href="#">Take a AAAAA</a>
+			</figcaption>
+			</figure>
+			</li>
+			-->
+		</ul>
+	</div>
 </div>
 </div>
 </section>
 <!-- FOOTER -->
 <footer id="foot-sec">
-<!--<div class="footerdivide">
-</div>
-<div class="container ">
-<div class="row">
-	<div class="text-center color-white col-sm-12 col-lg-12">
-		<ul class="social-icons">
-			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-			<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-		</ul>
-		<p>
-			 © Yiwen Dong
-		</p>
-		<p>
-			<a href="http://www.wowthemes.net/premium-themes-templates/">Official Website</a> | <a href="http://www.wowthemes.net/support/">Theme Support</a> | <a href="http://www.wowthemes.net/frequently-asked-questions/">F.A.Q.</a>
-		</p>
-	</div>
-</div>
-</div>-->
+  <!--Added via javascript-->
 </footer>
 <script type="text/javascript"> $.get("./data/footer.html", function(data){$("#foot-sec")[0].innerHTML = data;}) </script>
 <!-- Le javascript
