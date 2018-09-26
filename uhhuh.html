@@ -116,10 +116,51 @@ function showDivs(n) {
 <script type="text/javascript">
   var url = document.createElement('a');
   url.href = window.location.href;
-  var path = url.pathname;
-  document.getElementsByClassName("mySlides")[0].src="./assets/img" + path + "/slide-1.png";
-  document.getElementsByClassName("mySlides")[1].src="./assets/img" + path + "/slide-2.png";
-  document.getElementsByClassName("mySlides")[2].src="./assets/img" + path + "/slide-3.png";
+  var path = url.pathname;<div class="mySlides"
+     style="
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0;
+	background:url(../../assets/img/slide-1.png) fixed no-repeat;
+	width:100%;
+	height:100%;
+	-webkit-background-size:cover !Important;
+	-moz-background-size:cover !Important;
+	-o-background-size:cover !Important;
+	background-size:cover !Important;
+  background-position: center bottom;">
+</div>
+<div class="mySlides"
+     style="
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../../assets/img/slide-2.png) fixed no-repeat;
+	width:100%;
+	height:100%;
+	-webkit-background-size:cover !Important;
+	-moz-background-size:cover !Important;
+	-o-background-size:cover !Important;
+	background-size:cover !Important;
+  background-position: center top;">
+</div>
+<div class="mySlides"
+     style="
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../../assets/img/slide-3.png) fixed no-repeat;
+	width:100%;
+	height:100%;
+	-webkit-background-size:cover !Important;
+	-moz-background-size:cover !Important;
+	-o-background-size:cover !Important;
+	background-size:cover !Important;
+  background-position: center top;">
+</div>
   //document.styleSheets[2].insertRule("#slide_1:after {background-image: url(../../assets/img" + path + "/slide-1.png) !important}");
   //document.styleSheets[2].insertRule("#slide_2:after {background-image: url(../../assets/img" + path + "/slide-2.png) !important}");
   //document.styleSheets[2].insertRule("#slide_3:after {background-image: url(../../assets/img" + path + "/slide-3.png) !important}");
