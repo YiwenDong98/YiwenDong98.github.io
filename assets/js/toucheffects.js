@@ -68,11 +68,19 @@
 		}
 
 		[].slice.call( document.querySelectorAll( 'ul.grid > li > figure' ) ).forEach( function( el, i ) {
-			el.querySelector( 'figcaption > a' ).addEventListener( 'touchstart', function(e) {
+			el.querySelector( 'figcaption > a' ).addEventListener( 'touchstart click', function(e) {
 				e.stopPropagation();
 			}, false );
-			el.addEventListener( 'touchstart', function(e) {
+			el.querySelector( 'figcaption > a' ).addEventListener( 'click', function(e) {
+				e.stopPropagation();
+			}, false );
+			el.addEventListener( 'touchstart click', function(e) {
 				classie.toggle( this, 'cs-hover' );
+				e.stopPropagation();
+			}, false );
+			el.addEventListener( 'click', function(e) {
+				classie.toggle( this, 'cs-hover' );
+				e.stopPropagation();
 			}, false );
 		} );
 
