@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script>
+	// Edit this to match the ta and units for the course.
+    const TAS = {
+        'Yiwen': 1,
+        'Charles': 2,
+    };
+
+    let taList = [];
+    for (const [ta, units] of Object.entries(TAS)) {
+        for (let a=0; a < units; a++) {
+            taList.push(ta);
+        }
+    }
+    console.log("TAs: " + taList);
+
+    let calculateAnsweringTA = function (postNum, taList) {
+        return taList[postNum % taList.length];
+    }
+	
+	function calc() {
+		document.querySelector('#answerDiv').innerHTML = document.querySelector('#inputCID').value + " is: " + calculateAnsweringTA(
+		document.querySelector('#inputCID').value, taList);
+	}
+	</script>
+
+        <title>Piazza Calc</title>
+        <style type="text/css">
+            body {
+                height:100vh;
+                margin:0px;
+                display:flex;
+                justify-content:left;
+                align-items:center;
+            }
+
+            pre {
+                margin: 0;
+                margin-left: 24px;
+            }
+
+            a:visited {
+                color: blue;
+            }
+			
+			.form { display: flex; }
+			input[type=text] { flex-grow: 1; }
+        </style>
+	<meta name="description" content="Piazza Calc">
+
+    </head>
+
+    <body>
+<pre>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+<div class="form">
+<label for="name">Input post id:</label>
+<input type="text" id="inputCID" name="name"
+       minlength="0" maxlength="8" size="10" \>
+<button id="calcBtn" onclick="calc()">Who?</button> 
+</div>
+<div id="answerDiv">Press the button to update</div>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+</pre>
+    </body>
+	<script>
+	// Get the input field
+	let input = document.getElementById("inputCID");
+
+	// Execute a function when the user releases a key on the keyboard
+	input.addEventListener("keyup", function(event) {
+	  // Number 13 is the "Enter" key on the keyboard
+	  if (event.keyCode === 13) {
+		// Cancel the default action, if needed
+		event.preventDefault();
+		// Trigger the button element with a click
+		document.getElementById("calcBtn").click();
+	  }
+	}); 
+	</script>
+</html>
