@@ -5,6 +5,8 @@
 
 // Dimensions
 $max-content-width: {{ site.max_width }};
+$profile-position-h: {{ site.profile.position-h }};
+$profile-position-v: {{ site.profile.position-v }};
 
 @import
   "variables",

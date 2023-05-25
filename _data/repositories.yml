@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - YiwenDong98
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - YiwenDong98/gpt4all-java-binding
+  - YiwenDong98/CustomDoc
+  - YiwenDong98/openscad-models
+  - YiwenDong98/PiazzaTaAnnotation
+  - YiwenDong98/flappy
+  - YiwenDong98/MarkUsHelper

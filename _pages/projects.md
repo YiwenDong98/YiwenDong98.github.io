@@ -2,14 +2,16 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: >
+  Some of the projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: []
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
+<!-- TODO remove --><a href="https://web.archive.org/web/20220927164120/https://yiwendong.com/projects.html">for now</a>
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->

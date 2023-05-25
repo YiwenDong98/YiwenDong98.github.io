@@ -17,6 +17,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: 'Bitter', serif;
 }
 
 hr {
@@ -140,6 +141,7 @@ blockquote {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+    aspect-ratio: 1;
 
     .address {
       p {
@@ -305,7 +307,7 @@ blockquote {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.5rem;
 
     a {
       i::before {
