@@ -17,6 +17,11 @@ RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/
 # ENV GEM_HOME='root/gems' \
 #     PATH="root/gems/bin:${PATH}"
+ENV BUNDLE_PATH=/gems
+ENV GEM_PATH=/gems
+ENV GEM_HOME=/gems
+ENV PATH="/gems/bin:${PATH}"
+
 RUN gem install jekyll bundler
 RUN mkdir /srv/jekyll
 ADD Gemfile /srv/jekyll

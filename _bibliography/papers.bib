@@ -10,7 +10,11 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3510003.3510061},
 doi = {10.1145/3510003.3510061},
-abstract = {Code snippets are prevalent on websites such as Stack Overflow and are effective in demonstrating API usages concisely. However they are usually difficult to be used directly because most code snippets not only are syntactically incomplete but also lack dependency information, and thus do not compile. For example, Java snippets usually do not have import statements or required library names; only 6.88% of Java snippets on Stack Overflow include import statements necessary for compilation.This paper proposes SnR, a precise, efficient, constraint-based technique to automatically infer the exact types used in code snippets and the libraries containing the inferred types, to compile and therefore reuse the code snippets. Initially, SnR builds a knowledge base of APIs, i.e., various facts about the available APIs, from a corpus of Java libraries. Given a code snippet with missing import statements, SnR automatically extracts typing constraints from the snippet, solves the constraints against the knowledge base, and returns a set of APIs that satisfies the constraints to be imported into the snippet.We have evaluated SnR on a benchmark of 267 code snippets from Stack Overflow. SnR significantly outperforms the state-of-the-art tool Coster. SnR correctly infers 91.0% of the import statements, which makes 73.8% of the snippets compile, compared to 36.0% of the import statements and 9.0% of the snippets by Coster.},
+abstract = {Code snippets are prevalent on websites such as Stack Overflow and are effective in demonstrating API usages concisely. However they are usually difficult to be used directly because most code snippets not only are syntactically incomplete but also lack dependency information, and thus do not compile. For example, Java snippets usually do not have import statements or required library names; only 6.88% of Java snippets on Stack Overflow include import statements necessary for compilation.
+
+This paper proposes SnR, a precise, efficient, constraint-based technique to automatically infer the exact types used in code snippets and the libraries containing the inferred types, to compile and therefore reuse the code snippets. Initially, SnR builds a knowledge base of APIs, i.e., various facts about the available APIs, from a corpus of Java libraries. Given a code snippet with missing import statements, SnR automatically extracts typing constraints from the snippet, solves the constraints against the knowledge base, and returns a set of APIs that satisfies the constraints to be imported into the snippet.
+
+We have evaluated SnR on a benchmark of 267 code snippets from Stack Overflow. SnR significantly outperforms the state-of-the-art tool Coster. SnR correctly infers 91.0% of the import statements, which makes 73.8% of the snippets compile, compared to 36.0% of the import statements and 9.0% of the snippets by Coster.},
 booktitle = {Proceedings of the 44th International Conference on Software Engineering},
 pages = {1982–1993},
 numpages = {12},
@@ -30,7 +34,11 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3575693.3575740},
 doi = {10.1145/3575693.3575740},
-abstract = {Compilation Consistency Modulo Debug Information (CCMD) is an essential compiler property that a production compiler should support: the compiler should emit the same machine code regardless of enabling debug information. CCMD is vital to developers’ experiences with debugging a production binary containing no debug information. To debug such a binary, developers need build another binary with the same compiler flags and enable debug information. Without CCMD, the machine code in the latter binary will be different, which can confuse the debugger, hide the bug, or even cause a miscompilation (as GCC once did with the Linux Kernel). This paper is the first to introduce to the research community the validation of CCMD, a new research problem that has been overlooked for decades despite its importance. More importantly, we propose the first testing technique Dfusor to automatically validate CCMD for C compilers. At the high level, given a compilable program P as a seed, Dfusor automatically generates compilable program variants via multiple effective program transformations. Such variants can cause a compiler to emit more debug information than it would when compiling P, thus exercising more code paths in the compiler and increasing the chance to find CCMD bugs. Our extensive evaluations of Dfusor demonstrate that Dfusor can produce variants that exhibit significant increases in the quantity and complexity of the emitted debug information, and thus has found new, real bugs in GCC and LLVM. With a sample of 100 variants derived from distinct seed programs, Dfusor introduces 214% more debug information entries and 36% more distinct debug information entries in the variants than the seeds, and improves the code coverage of GCC and Clang by up to 6.00% and 6.82%. More importantly, Dfusor has found CCMD bugs; within 10 months of development and intermittent testing, Dfusor has found 23 bugs (9 in GCC and 14 in Clang), with 3 confirmed and 18 fixed.},
+abstract = {Compilation Consistency Modulo Debug Information (CCMD) is an essential compiler property that a production compiler should support: the compiler should emit the same machine code regardless of enabling debug information. CCMD is vital to developers’ experiences with debugging a production binary containing no debug information. To debug such a binary, developers need build another binary with the same compiler flags and enable debug information. Without CCMD, the machine code in the latter binary will be different, which can confuse the debugger, hide the bug, or even cause a miscompilation (as GCC once did with the Linux Kernel).
+
+This paper is the first to introduce to the research community the validation of CCMD, a new research problem that has been overlooked for decades despite its importance. More importantly, we propose the first testing technique Dfusor to automatically validate CCMD for C compilers. At the high level, given a compilable program P as a seed, Dfusor automatically generates compilable program variants via multiple effective program transformations. Such variants can cause a compiler to emit more debug information than it would when compiling P, thus exercising more code paths in the compiler and increasing the chance to find CCMD bugs.
+
+Our extensive evaluations of Dfusor demonstrate that Dfusor can produce variants that exhibit significant increases in the quantity and complexity of the emitted debug information, and thus has found new, real bugs in GCC and LLVM. With a sample of 100 variants derived from distinct seed programs, Dfusor introduces 214% more debug information entries and 36% more distinct debug information entries in the variants than the seeds, and improves the code coverage of GCC and Clang by up to 6.00% and 6.82%. More importantly, Dfusor has found CCMD bugs; within 10 months of development and intermittent testing, Dfusor has found 23 bugs (9 in GCC and 14 in Clang), with 3 confirmed and 18 fixed.},
 booktitle = {Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
 pages = {146–158},
 numpages = {13},
@@ -53,7 +61,9 @@ number = {1},
 issn = {1049-331X},
 url = {https://doi.org/10.1145/3517193},
 doi = {10.1145/3517193},
-abstract = {The Bourne-again shell (Bash) is a prevalent scripting language for orchestrating shell commands and managing resources in Unix-like environments. It is one of the mainstream shell dialects that is available on most GNU Linux systems. However, the unique syntax and semantics of Bash could easily lead to unintended behaviors if carelessly used. Prior studies primarily focused on improving the reliability of Bash scripts or facilitating writing Bash scripts; there is yet no empirical study on the characteristics of Bash programs written in reality, e.g., frequently used language features, common code smells, and bugs. In this article, we perform a large-scale empirical study of Bash usage, based on analyses over one million open source Bash scripts found in Github repositories. We identify and discuss which features and utilities of Bash are most often used. Using static analysis, we find that Bash scripts are often error-prone, and the error-proneness has a moderately positive correlation with the size of the scripts. We also find that the most common problem areas concern quoting, resource management, command options, permissions, and error handling. We envision that these findings can be beneficial for learning Bash and future research that aims to improve shell and command-line productivity and reliability.},
+abstract = {The Bourne-again shell (Bash) is a prevalent scripting language for orchestrating shell commands and managing resources in Unix-like environments. It is one of the mainstream shell dialects that is available on most GNU Linux systems. However, the unique syntax and semantics of Bash could easily lead to unintended behaviors if carelessly used. Prior studies primarily focused on improving the reliability of Bash scripts or facilitating writing Bash scripts; there is yet no empirical study on the characteristics of Bash programs written in reality, e.g., frequently used language features, common code smells, and bugs.
+
+In this article, we perform a large-scale empirical study of Bash usage, based on analyses over one million open source Bash scripts found in Github repositories. We identify and discuss which features and utilities of Bash are most often used. Using static analysis, we find that Bash scripts are often error-prone, and the error-proneness has a moderately positive correlation with the size of the scripts. We also find that the most common problem areas concern quoting, resource management, command options, permissions, and error handling. We envision that these findings can be beneficial for learning Bash and future research that aims to improve shell and command-line productivity and reliability.},
 journal = {ACM Trans. Softw. Eng. Methodol.},
 month = {feb},
 articleno = {8},
@@ -61,4 +71,59 @@ numpages = {22},
 keywords = {shell scripts, code smells, language features, Empirical studies, bash, bugs},
 selected={true},
 pdf={tosem22.pdf}
+}
+
+@inproceedings{kitten,
+author       = {Yongqiang Tian and Zhenyang Xu and Yiwen Dong and Chengnian Sun and Shing-Chi Cheung},
+editor       = {Edith Elkind},
+title        = {Revisiting the Evaluation of Deep Learning-Based Compiler Testing},
+booktitle    = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence, {IJCAI} 2023, Macao, China, August 19-25, 2023},
+publisher    = {ijcai.org},
+year         = {2023},
+url = {https://www.ijcai.org/proceedings/2023/0542.pdf},
+abstract = {A high-quality program generator is essential to
+effective automated compiler testing. Engineering such a program generator is difficult, time-consuming, and specific to the language under testing, thus requiring tremendous efforts from human
+experts with language-specific domain knowledge.
+To avoid repeatedly writing program generators for
+different languages, researchers recently proposed
+a language-agnostic approach based on deep learning techniques to automatically learn a program
+generator (referred to as DLG) from existing programs. Evaluations show that DLGs outperform
+Language-Specific Program Generators (LSGs) in
+testing compilers.
+
+However, we argue that it is unfair to use LSGs as
+baselines to evaluate DLGs. LSGs aim to validate
+compiler optimizations by only generating compilable, well-defined test programs; this restriction inevitably impairs the diversity of the language features used in the generated programs. In contrast,
+DLGs do not aim to validate the correctness of
+compiler optimizations, and its generated programs
+are not guaranteed to be well-defined or even compilable. Therefore, it is not surprising that DLG-generated programs are more diverse in terms of
+used language features than LSG-generated ones.
+
+This study revisits the evaluation of DLGs, and proposes a new, fair, simple yet strong baseline named
+Kitten for evaluating DLGs. Given a dataset consisting of human-written programs, instead of using
+deep learning techniques to learn a program generator, Kitten directly derives new programs by mutating the programs in the dataset. Extensive experiments with more than 1,500 CPU-hours demonstrate that the state-of-the-art DLGs fail to compete
+against such a simple baseline: 3 v.s. 1,750 hang
+bugs, 1 v.s. 34 distinct compiler crashes. We believe
+that DLGs still have a large room for improvement.},
+pdf={ijcai23.pdf}
+}
+
+@article{10.1145/3617172,
+author = {Tian, Yongqiang and Zhang, Xueyan and Dong, Yiwen and Xu, Zhenyang and Zhang, Mengxiao and Jiang, Yu and Cheung, Shing-Chi and Sun, Chengnian},
+title = {On the Caching Schemes to Speed Up Program Reduction},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3617172},
+doi = {10.1145/3617172},
+abstract = {Program reduction is a highly practical, widely demanded technique to help debug language tools, such as compilers, interpreters and debuggers. Given a program P that exhibits a property ψ, conceptually, program reduction iteratively applies various program transformations to generate a vast number of variants from P by deleting certain tokens, and returns the minimal variant preserving ψ as the result.
+
+A program reduction process inevitably generates duplicate variants, and the number of them can be significant. Our study reveals that on average (61.8\% ) and (24.3\% ) of the generated variants in two representative program reducers HDD and Perses, respectively, are duplicates. Checking them against ψ is thus redundant and unnecessary, which wastes time and computation resources. Although it seems that simply caching the generated variants can avoid redundant property tests, such a trivial method is impractical in the real world due to the significant memory footprint. Therefore, a memory-efficient caching scheme for program reduction is in great demand.
+
+This study is the first effort to conduct systematic, extensive analysis of memory-efficient caching schemes for program reduction. We first propose to use two well-known compression methods, ZIP and SHA, to compress the generated variants before they are stored in the cache. Furthermore, our keen understanding on the program reduction process motivates us to propose a novel, domain-specific, both memory and computation-efficient caching scheme, Refreshable Compact Caching (RCC). Our key insight is two-fold: ① by leveraging the correlation between variants and the original program P, we losslessly encode each variant into an equivalent, compact, canonical representation; ② periodically, stale cache entries, which will never be accessed, are timely removed to minimize the memory footprint over time. Our extensive evaluation on 31 real-world C compiler bugs demonstrates that caching schemes help avoid issuing redundant queries by (61.8\% ) and (24.3\% ) in HDD and Perses, respectively; correspondingly, the runtime performance is notably boosted by (22.8\% ) and (18.2\% ) . With regard to the memory efficiency, all three methods use less memory than the state-of-the-art string-based scheme STR. Specifically, ZIP and SHA cut down the memory footprint by more than 80\% and 90\% in both Perses and HDD compared to STR; moreover, the highly-scalable, domain-specific RCC dominates peer schemes, and outperforms the SHA by (96.4\% ) and (91.74\% ) in HDD and Perses, respectively.},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = {sep},
+keywords = {delta debugging, debugging, program reduction},
+pdf={tosem23.pdf}
 }

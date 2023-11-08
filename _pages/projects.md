@@ -11,7 +11,7 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<!-- TODO remove --><a href="https://web.archive.org/web/20220927164120/https://yiwendong.com/projects.html">for now</a>
+<!-- TODO remove <a href="https://web.archive.org/web/20220927164120/https://yiwendong.com/projects.html">for now</a> -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
