@@ -7,8 +7,14 @@ services:
     container_name: al-folio-local-website
     command: bash -c "
       rm -f Gemfile.lock
+      && bundle install
       && bundler exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace"
     ports:
       - 8080:8080
+    environment:
+      - BUNDLE_PATH=/gems
+      - GEM_PATH=/gems
+      - GEM_HOME=/gems
+      - PATH="/gems/bin:${PATH}"
     volumes:
       - .:/srv/jekyll
