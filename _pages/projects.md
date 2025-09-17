@@ -1,9 +1,9 @@
 ---
 layout: page
-title: projects
+title: side projects
 permalink: /projects/
 description: >
-  Some of the projects.
+  Some of the weekend projects and side work.
 nav: true
 nav_order: 2
 display_categories: []
@@ -11,7 +11,6 @@ horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<!-- TODO remove <a href="https://web.archive.org/web/20220927164120/https://yiwendong.com/projects.html">for now</a> -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->

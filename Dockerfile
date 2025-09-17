@@ -1,4 +1,4 @@
-FROM bitnami/minideb:latest
+FROM ruby:slim
 Label MAINTAINER Amir Pourmand
 RUN apt-get update -y
 # add locale
