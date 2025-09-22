@@ -24,10 +24,8 @@ My supervisor is <a href="https://cs.uwaterloo.ca/~cnsun/public/">Prof. Chengnia
 My <a href="assets/pdf/Resume.pdf">resume</a>.
 
 #### Research Interests
-- Software Engineering
-- Programming Languages
 
-I like to help developers become more productive.
+I like to help developers become more productive by working in the intersection between software engineering and programming langauges. Here are some of the projects I worked on.
 
 - Stack Overflow code reuse: [SnR](publications/#10.1145/3510003.3510061), [ThaliaType](https://github.com/uw-pluverse/thalia-type)
 - Bash common usage, code smells, and bugs: [Paper](publications/#10.1145/3517193)
