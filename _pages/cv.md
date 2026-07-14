@@ -4,5 +4,5 @@ permalink: /resume/
 title: resume
 nav: true
 nav_order: 4
-cv_pdf: Resume.pdf
+cv_pdf: /assets/pdf/Resume.pdf
 ---

@@ -14,13 +14,13 @@ category: fun
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/flappybyrd/slide-1.png" title="image 1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/flappybyrd/slide-1.png" title="image 1" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/flappybyrd/slide-2.png" title="image 2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/flappybyrd/slide-2.png" title="image 2" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/flappybyrd/slide-3.png" title="image 3" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/flappybyrd/slide-3.png" title="image 3" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
