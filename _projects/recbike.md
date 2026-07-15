@@ -6,6 +6,7 @@ img: assets/img/project_icon/recbike.png
 importance: 3
 category: fun
 ---
+
 - Designed and building from scratch a recumbent trike for a boy with trifunctional protein deficiency.
 - Hand and leg independent powering system for added strength.
 - Project for the NEU Enabling Engineering club.

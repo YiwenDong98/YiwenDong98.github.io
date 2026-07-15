@@ -6,6 +6,7 @@ img: assets/img/project_icon/trafficvisual.png
 importance: 3
 category: fun
 ---
+
 - Loads in thousands of datapoints from csv files.
 - Uses Google maps api for accurate maping.
 - Developed tools to scrape data into csv files from various gov websites.

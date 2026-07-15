@@ -6,6 +6,7 @@ img: assets/img/project_icon/wgpacalc.png
 importance: 3
 category: fun
 ---
+
 - Accurate WGPA information calculated with an easy to use app.
 - UI using Java Swing.
 - Downloads listed below.

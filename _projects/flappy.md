@@ -6,6 +6,7 @@ img: assets/img/project_icon/flappybyrd.png
 importance: 3
 category: fun
 ---
+
 - Challenged by a friend to recreate the original flappy bird as closely as possible.
 - Closely mimics the physics from the original game.
 - So close in fact, might just be a copyright infringement. My contact information is in the about page.

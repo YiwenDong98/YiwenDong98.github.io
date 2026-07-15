@@ -6,6 +6,7 @@ img: assets/img/project_icon/mara.png
 importance: 3
 category: fun
 ---
+
 - Built using MEAN stack
 - Searchable database with nearly 2000 entries. Most with respective descriptions, taste, positive/negative/medical effects.
 - Fully responsive interface

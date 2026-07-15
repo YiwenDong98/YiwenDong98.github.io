@@ -6,6 +6,7 @@ img: assets/img/project_icon/pollster.png
 importance: 3
 category: fun
 ---
+
 - Weekend project with <a href="http://rish.dev">friend</a> using ArangoDB and Node.js.
 - Easy poll creation on mobile.
 - Easy share to snapchat.

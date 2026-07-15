@@ -49,7 +49,9 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     {% if entry.doi %}
-      <div class="title"><a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a></div>
+      <div class="title">
+        <a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a>
+      </div>
     {% else %}
       <div class="title">{{ entry.title }}</div>
     {% endif %}

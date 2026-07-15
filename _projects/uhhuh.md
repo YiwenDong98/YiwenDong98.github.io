@@ -6,6 +6,7 @@ img: assets/img/project_icon/uhhuh.png
 importance: 3
 category: fun
 ---
+
 - Anonymous, decentralized, and secure.
 - Takes advantage of UDP with package loss protection.
 - Support basic communication with username and chat rooms
