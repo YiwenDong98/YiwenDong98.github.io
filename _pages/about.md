@@ -19,8 +19,7 @@ social: true  # includes social icons at the bottom of the page
 
 I enjoy building useful products that meet real customer needs.
 I've spent a decade designing, studying, and building software, with experience spanning software engineering research, developer tools, and AI-native products.
-I recently completed my Ph.D. at the University of Waterloo.
-My supervisor is <a href="https://cs.uwaterloo.ca/~cnsun/public/">Prof. Chengnian Sun</a>.
+I completed my Ph.D. at the University of Waterloo, supervised by <a href="https://cs.uwaterloo.ca/~cnsun/public/">Prof. Chengnian Sun</a>.
 
 My <a href="assets/pdf/Resume.pdf">resume</a>.
 
