@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-29'
+  last_updated: '2026-08-10'
 papers:
   Yw3TVykAAAAJ:2osOgNQ5qMEC:
     citations: 22
@@ -14,11 +14,11 @@ papers:
     title: Ad hoc syntax-guided program reduction
     year: '2023'
   Yw3TVykAAAAJ:UeHWp8X0CEIC:
-    citations: 17
+    citations: 18
     title: On the Caching Schemes to Speed Up Program Reduction
     year: '2023'
   Yw3TVykAAAAJ:W7OEmFMy1HYC:
-    citations: 2
+    citations: 3
     title: Unmasking the Type Inference Capabilities of LLMs for Java Code Snippets
     year: '2026'
   Yw3TVykAAAAJ:Y0pCki6q_DkC:
@@ -26,7 +26,7 @@ papers:
     title: Precise and Scalable Constraint-Based Type Inference for Incomplete Java Code Snippets in the Age of Large Language Models
     year: '2025'
   Yw3TVykAAAAJ:d1gkVwhDpl0C:
-    citations: 30
+    citations: 29
     title: 'Bash in the Wild: Language Usage, Code Smells, and Bugs'
     year: '2023'
   Yw3TVykAAAAJ:qjMakFHDy7sC:
@@ -34,6 +34,6 @@ papers:
     title: Revisiting the Evaluation of Deep Learning-Based Compiler Testing
     year: '2023'
   Yw3TVykAAAAJ:zYLM7Y9cAGgC:
-    citations: 26
+    citations: 27
     title: 'LPR: Large Language Models-Aided Program Reduction'
     year: '2024'
