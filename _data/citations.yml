@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-10'
+  last_updated: '2026-08-21'
 papers:
   Yw3TVykAAAAJ:2osOgNQ5qMEC:
     citations: 22
@@ -14,7 +14,7 @@ papers:
     title: Ad hoc syntax-guided program reduction
     year: '2023'
   Yw3TVykAAAAJ:UeHWp8X0CEIC:
-    citations: 18
+    citations: 19
     title: On the Caching Schemes to Speed Up Program Reduction
     year: '2023'
   Yw3TVykAAAAJ:W7OEmFMy1HYC:
@@ -34,6 +34,6 @@ papers:
     title: Revisiting the Evaluation of Deep Learning-Based Compiler Testing
     year: '2023'
   Yw3TVykAAAAJ:zYLM7Y9cAGgC:
-    citations: 27
+    citations: 28
     title: 'LPR: Large Language Models-Aided Program Reduction'
     year: '2024'
