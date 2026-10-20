@@ -1,6 +1,35 @@
 ---
 ---
 
+@article{Dong2026Scitix,
+  author       = {Dong, Yiwen and Xu, Zhenyang and Tian, Yongqiang and Lee, Edward and Lhot{\'a}k, Ond{\v r}ej and Sun, Chengnian},
+  title        = {{Scitix}: Scalable Constraint-Based Type Inference for Code Snippets with Missing Types},
+  journal      = {Proceedings of the ACM on Software Engineering},
+  volume       = {3},
+  number       = {ISSTA},
+  articleno    = {ISSTA033},
+  numpages     = {23},
+  month        = {oct},
+  year         = {2026},
+  series       = {ISSTA 2026},
+  doi          = {10.1145/3832124},
+  url          = {https://doi.org/10.1145/3832124},
+  abstract     = {Code snippets commonly appear in online developer communities, documentation, and LLM-assisted workflows to communicate ideas and algorithms. However, contextual information, like dependencies and the exact types, are often missing in code snippets, which makes their reuse difficult. Some of the most successful automated techniques use logical constraints to infer the types and dependencies, but they do not work in practice because they require an exact knowledge base that contains all possible dependencies and exact types. However, such a knowledge base is both computationally expensive for constraint solving and impossible to achieve in the presence of missing types (e.g., user-defined types) in code snippets.<br><br>To this end, this paper proposes a novel, scalable technique named Scitix. Our insight is two-fold. First, inspired by gradual typing’s use of an unknown type, we represent certain missing types as Any, ignoring such types during constraint solving, improving performance and scalability. Second, our novel, iterative constraint-solving approach saves on computation and skips constraints involving missing types. Our extensive evaluations show that our insights improve both performance and scalability compared to SnR (the state of the art). Specifically, Scitix achieves F1-scores of 94.8\% and 86.8\% on Stack Overflow and generated code snippets, respectively, using a large knowledge base of over 3,000 jars. In contrast, SnR consistently times out, yielding near 0\% F1. Even with the smallest knowledge base, where SnR does not time out, Scitix reduces the number of errors by 77\% and 45\% compared to SnR. Compared to state-of-the-art large language models (LLMs) like GPT-4o and the LLM-based ZS4C, Scitix improves F1-score by 76.8\% and 35.4\%, respectively. Scitix’s strong performance highlights its potential as a practical technique for type inference in real-world code snippets.},
+  pdf          = {issta26.pdf}
+}
+
+@article{10.1145/3790099,
+  author       = {Dong, Yiwen and Xu, Zhenyang and Tian, Yongqiang and Sun, Chengnian},
+  title        = {Unmasking the Type Inference Capabilities of {LLMs} for {Java} Code Snippets},
+  journal      = {ACM Transactions on Software Engineering and Methodology},
+  year         = {2026},
+  publisher    = {Association for Computing Machinery},
+  doi          = {10.1145/3790099},
+  url          = {https://doi.org/10.1145/3790099},
+  abstract     = {Type inference is a crucial task for reusing online code snippets. Although code snippets are prevalently shared on platforms like Stack Overflow, they frequently lack essential type information, such as fully qualified names (FQNs) and required libraries. Recent studies have leveraged Large Language Models (LLMs) to perform type inference for such code snippets, demonstrating promising performance. However, these evaluations may suffer from data leakage, as the benchmark suite, StatType-SO, used for evaluation has been publicly available on GitHub since 2017. Consequently, it remains uncertain whether the strong performance of LLMs reflects genuine semantic understanding of code or is due to the ground truth being included in the training set.<br><br>This paper strives to comprehensively evaluate the genuine type inference capabilities of LLMs on Java code snippets and identify potential limitations of LLMs. First, we created ThaliaType, a new, previously unreleased benchmark suite designed for type inference evaluation. Second, using the StarCoder2 LLM as a baseline, we uncovered data leakage from StatType-SO in StarCoder2’s open-source training set and observed that other state-of-the-art LLMs exhibit similar performance drops when evaluated on ThaliaType, with precision decreasing by up to 59\% and recall by up to 72\%. Finally, we developed semantic-preserving code transformations to further investigate the capabilities of LLMs in understanding the execution semantics of code snippets. Our results showed that the performance of LLMs on StatType-SO is far less robust to these transformations than on ThaliaType, suggesting that the performance on StatType-SO may be biased by data leakage and have limited generalizability.<br><br>These findings highlight the importance of carefully designed, leakage-free benchmarks for evaluating LLMs on type inference tasks. We recommend future studies adopt ThaliaType to ensure rigorous and reliable assessments of LLMs’ genuine type inference capabilities.},
+  pdf          = {tosem26.pdf}
+}
+
 @phdthesis{Dong2025,
   author       = {Yiwen Dong},
   title        = {Precise and Scalable Constraint-Based Type Inference for Incomplete Java Code Snippets in the Age of Large Language Models},

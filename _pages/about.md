@@ -19,6 +19,7 @@ social: true # includes social icons at the bottom of the page
 
 I enjoy building useful products that meet real customer needs.
 I've spent a decade designing and building software, with experience across developer tools, AI-native products, and software systems.
+I'm currently working at <a href="https://www.haptiq.com/">Haptiq</a>.
 
 My <a href="assets/pdf/Resume.pdf">resume</a>.
 
@@ -26,8 +27,9 @@ In my free time, I like working on <a href="projects">side projects</a> to tackl
 
 #### Research
 
-I like to help developers become more productive by working in the intersection between software engineering and programming langauges. Here are some of the projects I worked on.
 I completed my Ph.D. in Software Engineering at the University of Waterloo, supervised by <a href="https://cs.uwaterloo.ca/~cnsun/public/">Prof. Chengnian Sun</a>.
+For my research, I enjoyed helping developers become more productive by working in the intersection between software engineering and programming langauges. 
+Here are some of the projects I worked on.
 
 - Stack Overflow code reuse: [SnR](publications/#10.1145/3510003.3510061), [ThaliaType](https://github.com/uw-pluverse/thalia-type)
 - Bash common usage, code smells, and bugs: [Paper](publications/#10.1145/3517193)

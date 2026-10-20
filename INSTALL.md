@@ -54,18 +54,22 @@ Using Docker to install Jekyll and Ruby dependencies is the easiest way.
 You need to take the following steps to get `al-folio` up and running on your local machine:
 
 - First, install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/).
-- Finally, run the following command that will pull the latest pre-built image from DockerHub and will run your website.
+- Build and start the local image with Ruby 4.0.7 and the committed dependency locks:
 
 ```bash
-$ docker compose pull
-$ docker compose up
+docker compose up --build
 ```
 
-Note that when you run it for the first time, it will download a docker image of size 400MB or so. To see the template running, open your browser and go to `http://localhost:8080`. You should see a copy of the theme's demo website.
+Open `http://localhost:8080`. Changes to site content reload automatically. Rebuild after dependency or Dockerfile updates. Both Compose files use the same local image; no prebuilt theme image is required.
 
-Now, feel free to customize the theme however you like (don't forget to change the name!). Also, your changes should be automatically rendered in real-time (or maybe after a few seconds).
+### Dependency maintenance
 
-> Beta: You can also use the slimmed docker image with a size below 100MBs and exact same functionality. Just use `docker compose -f docker-compose-slim.yml up`
+- Ruby: update `Gemfile.lock` with `bundle update --all`, then run `bundle exec bundler-audit check --update`.
+- Node: use `npm ci` for installs and `npm audit` for advisories. PurgeCSS stays on 7.0.2 with a patched `postcss-selector-parser` override because its newer major pulls in a vulnerable globbing dependency.
+- Python: retain `bibtexparser<2` while `scholarly` uses its v1 API. Edit `requirements.in`, regenerate `requirements.txt` with `pip-compile --upgrade requirements.in`, and run `pip-audit -r requirements.txt`.
+- Run `JEKYLL_ENV=production bundle exec jekyll build` and `npx --no-install purgecss -c purgecss.config.js` after updates.
+
+Dependabot checks dependency updates weekly, and the dependency audit workflow checks known Ruby, npm, and Python advisories on pushes, pull requests, and a weekly schedule. CDN libraries and operating-system packages need separate review. The unused library downloader was removed to eliminate its vulnerable CSS parser dependency; `third_party_libraries.download` must remain `false`.
 
 ### Build your own docker image
 

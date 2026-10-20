@@ -1,4 +1,4 @@
-FROM ruby:slim
+FROM ruby:4.0.7-slim
 
 # uncomment these if you are having this issue with the build:
 # /usr/local/bundle/gems/jekyll-4.3.4/lib/jekyll/site.rb:509:in `initialize': Permission denied @ rb_sysopen - /srv/jekyll/.jekyll-cache/.gitignore (Errno::EACCES)
@@ -31,8 +31,8 @@ RUN apt-get update -y && \
         nodejs \
         procps \
         python3-pip \
-        zlib1g-dev && \
-    pip --no-cache-dir install --upgrade --break-system-packages nbconvert
+        python3-venv \
+        zlib1g-dev
 
 # clean up
 RUN apt-get clean && \
@@ -63,6 +63,11 @@ WORKDIR /srv/jekyll
 # install jekyll and dependencies
 RUN gem install --no-document jekyll bundler
 RUN bundle install --no-cache
+
+COPY requirements.txt /srv/jekyll/requirements.txt
+RUN python3 -m venv /opt/site-python
+ENV PATH="/opt/site-python/bin:${PATH}"
+RUN pip --no-cache-dir install -r requirements.txt
 
 EXPOSE 8080
 
