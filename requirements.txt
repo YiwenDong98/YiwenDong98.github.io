@@ -22,7 +22,7 @@ beautifulsoup4==4.15.0
     # via
     #   nbconvert
     #   scholarly
-bibtexparser==1.4.4
+bibtexparser==2.1.0
     # via
     #   -r requirements.in
     #   scholarly
@@ -116,7 +116,7 @@ pygments==2.21.0
     # via
     #   nbconvert
     #   sphinx
-pyparsing==3.3.3
+pylatexenc==2.11
     # via bibtexparser
 pysocks==1.7.1
     # via
