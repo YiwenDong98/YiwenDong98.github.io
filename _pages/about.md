@@ -31,7 +31,7 @@ I completed my Ph.D. in Software Engineering at the University of Waterloo, supe
 For my research, I enjoyed helping developers become more productive by working in the intersection between software engineering and programming langauges.
 Here are some of the projects I worked on.
 
-- Stack Overflow code reuse: [SnR](publications/#10.1145/3510003.3510061), [ThaliaType](https://github.com/uw-pluverse/thalia-type)
+- Stack Overflow code reuse: [SnR](publications/#10.1145/3510003.3510061), [Scitix](publications/#Dong2026Scitix), [ThaliaType](https://github.com/uw-pluverse/thalia-type)
 - Bash common usage, code smells, and bugs: [Paper](publications/#10.1145/3517193)
 - Compiler testing: [CCMD](publications/#), [Kitten](publications/#10.24963/ijcai.2023/542)
 
