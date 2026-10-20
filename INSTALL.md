@@ -6,6 +6,7 @@
   - [Recommended Approach](#recommended-approach)
   - [Local setup on Windows](#local-setup-on-windows)
   - [Local setup using Docker (Recommended)](#local-setup-using-docker-recommended)
+    - [Dependency maintenance](#dependency-maintenance)
     - [Build your own docker image](#build-your-own-docker-image)
     - [Have Bugs on Docker Image?](#have-bugs-on-docker-image)
   - [Local Setup with Development Containers](#local-setup-with-development-containers)
