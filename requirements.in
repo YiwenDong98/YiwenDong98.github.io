@@ -3,4 +3,4 @@ pyyaml
 scholarly
 
 # scholarly still imports the BibTeX parser v1 API.
-bibtexparser<2
+bibtexparser<3
