@@ -128,7 +128,7 @@ python-dateutil==2.9.0.post0
     #   jupyter-client
 python-dotenv==1.2.4
     # via scholarly
-pyyaml==6.0.3
+pyyaml==6.0.4
     # via -r requirements.in
 pyzmq==27.2.0
     # via jupyter-client
